@@ -18,8 +18,7 @@ def binary_search(arr, target):
         middle_index = (start + end) // 2
 
         if arr[middle_index] == target:
-            found = True
-            return arr.index(target)
+            return middle_index
         else:
             if target < arr[middle_index]:
                 end = middle_index - 1
